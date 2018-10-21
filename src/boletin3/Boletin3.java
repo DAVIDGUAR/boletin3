@@ -24,19 +24,19 @@ public class Boletin3 {
         Consumo consumo1 = new Consumo(100f,10f,150f,1.40f,60f);
         
         //D
-        //System.out.println("consumo Medio= " +consumo1.consumoMedio());
-        //System.out.println("consumo Euro= " +consumo1.consumoEuro());
+        System.out.println("consumo Medio= " +consumo1.consumoMedio());
+        System.out.println("consumo Euro= " +consumo1.consumoEuro());
         
 
         //E
-        consumo1.setlitros(1.55f);
+        consumo1.setpGas(1.55f);
         
-        System.out.println("consumo Medio= " +consumo1.getlitros());
+        
         System.out.println("consumo Medio= " +consumo1.consumoMedio());
         System.out.println("consumo Euro= " +consumo1.consumoEuro());
 
         //F
-        //System.out.println("velocidad media=" +consumo1.velocidadMedia());
+        System.out.println("velocidad media=" +consumo1.velocidadMedia());
     }
     
 }
