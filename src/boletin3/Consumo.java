@@ -3,20 +3,23 @@ package boletin3;
 
 public class Consumo {
     
-    private float km,litros,vMed,pGas;
+    private float km,litros,vMed,pGas,tempo;
     
-    //constructor defecto
+    //constructor sen parametros
     
     public Consumo(){
         }
     
     //constructor parametros
     
-    public Consumo(float km,float Lt,float vMed,float pGas){
+    public Consumo(float km,float Lt,float vMed,float pGas,float tempo){
         this.km=km;
         this.litros=Lt;
         this.pGas=pGas;
         this.vMed=vMed;
+        this.tempo=tempo;
+      
+                
     }
     
     //metodos
@@ -35,26 +38,47 @@ public class Consumo {
         return litros;
     }
     
-    public void setvMed(float vMed){
-        this.vMed = vMed;
+    public void settempo (float tempo){
+        this.tempo = tempo;
     }
     
-    public float getvMed(){
-        return vMed;
-        
+    public float gettempo(){
+        return tempo;
     }
-    public void setpGas(){
+    
+    
+    //public void setvMed(float vMed){
+     //   this.vMed = vMed;
+    //}
+    
+    //public float getvMed(){
+      //  return vMed;
+        
+    //}
+    public void setpGas(float pGas){
         this.pGas = pGas;
         
     }
     public float getpGas(){
+        
         return pGas;
     }
     
-    public float calculo(){
-        
-        
+    public float consumoMedio(){
+        float consumoMedio;
+        consumoMedio=km/litros;
+        return consumoMedio;
+        }
+    public float consumoEuro(){
+        float consumoEuro;
+        consumoEuro=(km/litros)*pGas;
+        return consumoEuro;
     }
-        
+    
+    public float velocidadMedia(){
+        float velocidadMedia;
+        velocidadMedia= tempo/km;
+        return vMed;
+    }
     
 }
