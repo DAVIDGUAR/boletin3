@@ -47,14 +47,14 @@ public class Consumo {
     }
     
     
-    //public void setvMed(float vMed){
-     //   this.vMed = vMed;
-    //}
+    public void setvMed(float vMed){
+        this.vMed = vMed;
+    }
     
-    //public float getvMed(){
-      //  return vMed;
+    public float getvMed(){
+        return vMed;
         
-    //}
+    }
     public void setpGas(float pGas){
         this.pGas = pGas;
         
@@ -66,19 +66,19 @@ public class Consumo {
     
     public float consumoMedio(){
         float consumoMedio;
-        consumoMedio=km/litros;
+        consumoMedio=(litros/km)*100;
         return consumoMedio;
         }
     public float consumoEuro(){
         float consumoEuro;
-        consumoEuro=(km/litros)*pGas;
+        consumoEuro=(consumoMedio())*pGas;
         return consumoEuro;
     }
     
     public float velocidadMedia(){
         float velocidadMedia;
-        velocidadMedia= tempo/km;
-        return vMed;
+        velocidadMedia= km/tempo;
+        return velocidadMedia;
     }
     
 }

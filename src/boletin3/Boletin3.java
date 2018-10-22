@@ -21,7 +21,7 @@ public class Boletin3 {
         
         
         //C
-        Consumo consumo1 = new Consumo(100f,10f,150f,1.40f,60f);
+        Consumo consumo1 = new Consumo(120f,10f,150f,1.40f,1f);
         
         //D
         System.out.println("consumo Medio= " +consumo1.consumoMedio());
@@ -30,13 +30,17 @@ public class Boletin3 {
 
         //E
         consumo1.setpGas(1.55f);
+        consumo1.setlitros(12f);
         
         
         System.out.println("consumo Medio= " +consumo1.consumoMedio());
         System.out.println("consumo Euro= " +consumo1.consumoEuro());
 
-        //F
-        System.out.println("velocidad media=" +consumo1.velocidadMedia());
+        //F no lo pedia el enunciado
+        //System.out.println("velocidad media=" +consumo1.velocidadMedia());
+        
+        //F 
+        System.out.println("velocidad media2=" +consumo1.getvMed());
     }
     
 }
