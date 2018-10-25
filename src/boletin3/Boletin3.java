@@ -37,7 +37,7 @@ public class Boletin3 {
         System.out.println("consumo Euro= " +consumo1.consumoEuro());
 
         //F no lo pedia el enunciado
-        //System.out.println("velocidad media=" +consumo1.velocidadMedia());
+        System.out.println("velocidad media=" +consumo1.velocidadMedia());
         
         //F 
         System.out.println("velocidad media2=" +consumo1.getvMed());
