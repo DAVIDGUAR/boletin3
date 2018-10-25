@@ -64,6 +64,10 @@ public class Consumo {
         return pGas;
     }
     
+    
+    // Metodos calculo
+    
+    
     public float consumoMedio(){
         float consumoMedio;
         consumoMedio=(litros/km)*100;
